@@ -1,6 +1,6 @@
 FROM nginx:alpine
 COPY index.html /usr/share/nginx/html/index.html
 COPY style.css /usr/share/nginx/html/style.css
-EXPOSE 85
+EXPOSE 84
 docker build -t monapp:dev .
-docker run -d -p 8585:85 --name monappdev monapp:dev
+docker run -d -p 8484:84 --name monappdev monapp:dev
