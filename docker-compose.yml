@@ -1,0 +1,6 @@
+services:
+web:
+image: test-jenkins-Gr3/monapp:latest
+ports:
+- "8484:84"
+restart: unless-stopped
