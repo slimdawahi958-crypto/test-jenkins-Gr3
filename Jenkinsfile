@@ -2,7 +2,7 @@ pipeline {
 agent any
 options { timestamps() }
 environment {
-IMAGE = 'wiemk/monapp'
+IMAGE = 'slimdawahi958-crypto/test-jenkins-Gr3'
 TAG = "build-${env.BUILD_NUMBER}"
 }
 stages {
@@ -19,9 +19,9 @@ stage('Smoke Test') {
 steps {
 bat """
 docker rm -f monapp_test 2>nul || ver > nul
-docker run -d --name monapp_test -p 8586:85 %IMAGE%:%TAG%
+docker run -d --name monapp_test -p 8485:84 %IMAGE%:%TAG%
 ping -n 3 127.0.0.1 > nul
-curl -I http://localhost:8081 | find "200 OK"
+curl -I http://localhost:8484 | find "200 OK"
 docker rm -f monapp_test
 """
 }
