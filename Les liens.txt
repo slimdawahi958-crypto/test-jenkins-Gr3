@@ -1,0 +1,4 @@
+lien du docker hub:
+https://hub.docker.com/repository/docker/slim12/tp3_jenkins/general
+lien du GitHub:
+https://github.com/slimdawahi958-crypto/test-jenkins-Gr3.git
