@@ -2,6 +2,10 @@ pipeline {
 agent any
 options { timestamps() }
 environment {
+<<<<<<< HEAD
+=======
+PATH = "C:\\Program Files\\Docker\\Docker\\resources\\bin;${env.PATH}"
+>>>>>>> 4b55deab8a7f5e4b41254db7d7d2a9211040f943
 IMAGE = 'slimdawahi958-crypto/test-jenkins-Gr3'
 TAG = "build-${env.BUILD_NUMBER}"
 }
